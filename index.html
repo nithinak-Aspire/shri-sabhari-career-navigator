@@ -1,0 +1,232 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Shri Sabhari Career Level Navigator — a self-explanatory CL4 to CL1 career framework." />
+  <title>Shri Sabhari Career Navigator</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="topbar" aria-label="Presentation controls">
+    <div class="brand-lockup">
+      <img class="client-logo" src="assets/shri-sabhari-logo.png" alt="Shri Sabhari" />
+      <span class="divider" aria-hidden="true"></span>
+      <span class="prepared">Career Framework</span>
+    </div>
+    <div class="controls">
+      <button class="control-btn" id="prevBtn" type="button" aria-label="Previous section">←</button>
+      <span class="page-counter"><strong id="currentPage">1</strong> / 5</span>
+      <button class="control-btn" id="nextBtn" type="button" aria-label="Next section">→</button>
+      <button class="control-btn text-btn" id="printBtn" type="button">Export PDF</button>
+    </div>
+  </header>
+
+  <main id="deck" class="deck">
+    <section class="slide hero active" data-slide="1" aria-labelledby="hero-title">
+      <div class="hero-copy">
+        <div class="eyebrow">SHRI SABHARI CAREER NAVIGATOR</div>
+        <h1 id="hero-title">Your career journey,<br><span>made visible.</span></h1>
+        <p class="hero-subtitle">Understand your level, your next move, and what makes you ready.</p>
+
+        <div class="question-grid" aria-label="Three questions answered by the navigator">
+          <article><span>01</span><strong>Where am I today?</strong></article>
+          <article><span>02</span><strong>Where can I grow?</strong></article>
+          <article><span>03</span><strong>What makes me ready?</strong></article>
+        </div>
+
+        <button class="primary-action" data-go="2" type="button">Explore the four levels <span>→</span></button>
+      </div>
+
+      <div class="hero-visual" aria-label="Career level pathway from CL4 to CL1">
+        <div class="orbit orbit-one"></div>
+        <div class="orbit orbit-two"></div>
+        <div class="level-stack">
+          <div class="mini-level cl1"><b>CL1</b><span>Enterprise Leadership</span></div>
+          <div class="mini-level cl2"><b>CL2</b><span>Function Leadership</span></div>
+          <div class="mini-level cl3"><b>CL3</b><span>Frontline Leadership</span></div>
+          <div class="mini-level cl4"><b>CL4</b><span>Skilled Execution</span></div>
+        </div>
+        <div class="growth-line"><span>GROWTH THROUGH READINESS</span></div>
+      </div>
+
+      <footer class="slide-footer">
+        <span>Start with your current role. Find your level. Follow your next-step pathway.</span>
+        <div class="partner-mark"><span>Prepared by</span><img src="assets/aspire-logo.png" alt="Aspire" /></div>
+      </footer>
+    </section>
+
+    <section class="slide levels" data-slide="2" aria-labelledby="levels-title">
+      <div class="section-heading">
+        <div>
+          <div class="eyebrow">THE FRAMEWORK</div>
+          <h2 id="levels-title">The four career levels at a glance</h2>
+        </div>
+        <p>Each level is defined by the scope you own, the decisions you make, and the impact you create — not by title alone.</p>
+      </div>
+
+      <div class="staircase" role="list" aria-label="Four career levels">
+        <button class="level-card cl4 selected" data-level="cl4" role="listitem" type="button">
+          <span class="level-code">CL4</span>
+          <span class="level-title">Skilled Execution<br>& Associates</span>
+          <span class="level-tag">I deliver reliably.</span>
+        </button>
+        <button class="level-card cl3" data-level="cl3" role="listitem" type="button">
+          <span class="level-code">CL3</span>
+          <span class="level-title">Frontline Leadership<br>& Senior Specialists</span>
+          <span class="level-tag">I guide execution or deepen expertise.</span>
+        </button>
+        <button class="level-card cl2" data-level="cl2" role="listitem" type="button">
+          <span class="level-code">CL2</span>
+          <span class="level-title">Function & Department<br>Leadership</span>
+          <span class="level-tag">I own functional outcomes.</span>
+        </button>
+        <button class="level-card cl1" data-level="cl1" role="listitem" type="button">
+          <span class="level-code">CL1</span>
+          <span class="level-title">Enterprise & Strategic<br>Leadership</span>
+          <span class="level-tag">I shape direction and growth.</span>
+        </button>
+      </div>
+
+      <aside class="level-detail" id="levelDetail" aria-live="polite">
+        <div class="detail-accent cl4-bg"></div>
+        <div>
+          <span class="detail-label">CURRENTLY VIEWING</span>
+          <h3>CL4 — Skilled Execution & Associates</h3>
+          <p>I perform defined operational, technical, administrative, or support work reliably using SOPs and guidance.</p>
+        </div>
+        <dl>
+          <div><dt>What I own</dt><dd>My task, workstation, accuracy and personal safety</dd></div>
+          <div><dt>How I contribute</dt><dd>Reliable execution, quality, productivity and escalation</dd></div>
+          <div><dt>Typical roles</dt><dd>Junior supervisors, officers, executives, technicians, associates</dd></div>
+        </dl>
+      </aside>
+
+      <footer class="slide-footer compact">
+        <span>Click a level to understand its scope.</span>
+        <div class="partner-mark"><span>Prepared by</span><img src="assets/aspire-logo.png" alt="Aspire" /></div>
+      </footer>
+    </section>
+
+    <section class="slide growth" data-slide="3" aria-labelledby="growth-title">
+      <div class="section-heading">
+        <div>
+          <div class="eyebrow">MOVEMENT</div>
+          <h2 id="growth-title">Career growth has more than one direction</h2>
+        </div>
+        <p>A career is not only a ladder. Employees can grow through broader accountability, deeper expertise, or related functional experience.</p>
+      </div>
+
+      <div class="path-grid">
+        <article class="path-card vertical-path">
+          <div class="path-icon">↑</div>
+          <span class="path-number">01</span>
+          <h3>Vertical Growth</h3>
+          <p>Move to a role with broader accountability, decision authority, and ownership.</p>
+          <div class="micro-diagram vertical-diagram"><i></i><i></i><i></i><i></i></div>
+        </article>
+
+        <article class="path-card specialist-path">
+          <div class="path-icon">✦</div>
+          <span class="path-number">02</span>
+          <h3>Specialist Growth</h3>
+          <p>Deepen technical expertise without being forced into people management.</p>
+          <div class="micro-diagram specialist-diagram"><i></i><i></i><i></i><i></i><i></i></div>
+        </article>
+
+        <article class="path-card lateral-path">
+          <div class="path-icon">↔</div>
+          <span class="path-number">03</span>
+          <h3>Lateral Growth</h3>
+          <p>Move to a related function where your skills and experience are transferable.</p>
+          <div class="micro-diagram lateral-diagram"><i></i><i></i><i></i></div>
+        </article>
+      </div>
+
+      <div class="key-message">
+        <strong>Growth principle</strong>
+        <span>Career movement is based on demonstrated readiness — not years of service alone.</span>
+      </div>
+
+      <footer class="slide-footer compact">
+        <span>Choose the path that fits both the organisation’s need and your strengths.</span>
+        <div class="partner-mark"><span>Prepared by</span><img src="assets/aspire-logo.png" alt="Aspire" /></div>
+      </footer>
+    </section>
+
+    <section class="slide readiness" data-slide="4" aria-labelledby="readiness-title">
+      <div class="section-heading">
+        <div>
+          <div class="eyebrow">READINESS</div>
+          <h2 id="readiness-title">What makes you ready for the next level?</h2>
+        </div>
+        <p>Promotion readiness is demonstrated through consistent evidence across six areas.</p>
+      </div>
+
+      <div class="readiness-layout">
+        <div class="readiness-wheel" aria-label="Six readiness factors">
+          <div class="wheel-center"><strong>NEXT<br>LEVEL</strong><span>Readiness</span></div>
+          <button style="--i:0" data-readiness="Performance & KPI Achievement" type="button"><b>01</b><span>Performance</span></button>
+          <button style="--i:1" data-readiness="Process & Technical Capability" type="button"><b>02</b><span>Capability</span></button>
+          <button style="--i:2" data-readiness="Safety & Compliance Record" type="button"><b>03</b><span>Safety</span></button>
+          <button style="--i:3" data-readiness="Problem Solving & Ownership" type="button"><b>04</b><span>Ownership</span></button>
+          <button style="--i:4" data-readiness="Team & Stakeholder Contribution" type="button"><b>05</b><span>Contribution</span></button>
+          <button style="--i:5" data-readiness="Readiness Evidence & Demonstrated Capability" type="button"><b>06</b><span>Evidence</span></button>
+        </div>
+
+        <div class="evidence-panel">
+          <span class="detail-label">SELF-CHECK</span>
+          <h3 id="readinessFocus">Performance & KPI Achievement</h3>
+          <p id="readinessDescription">Can I show sustained delivery against the expectations of my current role?</p>
+          <div class="evidence-question">
+            <span>Ask yourself</span>
+            <strong>“What evidence can I show that I am already operating at the next level?”</strong>
+          </div>
+        </div>
+      </div>
+
+      <footer class="slide-footer compact">
+        <span>Readiness must be visible, repeatable, and supported by evidence.</span>
+        <div class="partner-mark"><span>Prepared by</span><img src="assets/aspire-logo.png" alt="Aspire" /></div>
+      </footer>
+    </section>
+
+    <section class="slide howto" data-slide="5" aria-labelledby="howto-title">
+      <div class="section-heading">
+        <div>
+          <div class="eyebrow">USE THE NAVIGATOR</div>
+          <h2 id="howto-title">Five steps to plan your next move</h2>
+        </div>
+        <p>Use this framework as the starting point for a focused development conversation with your manager and HR.</p>
+      </div>
+
+      <ol class="steps" aria-label="Five steps">
+        <li><span>01</span><div><strong>Find your designation</strong><p>Locate your current role in the career framework.</p></div></li>
+        <li><span>02</span><div><strong>Identify your level</strong><p>Understand the scope and expectations of your current career level.</p></div></li>
+        <li><span>03</span><div><strong>Explore your possibilities</strong><p>Review vertical, specialist, and lateral movement options.</p></div></li>
+        <li><span>04</span><div><strong>Review readiness</strong><p>Compare your evidence against next-level expectations.</p></div></li>
+        <li><span>05</span><div><strong>Create the plan</strong><p>Agree development actions with your manager and HR.</p></div></li>
+      </ol>
+
+      <blockquote>
+        <p>Your title shows your <b>role.</b><br>Your career level shows your <b>scope.</b><br>Your readiness shows your <b>next move.</b></p>
+      </blockquote>
+
+      <footer class="final-footer">
+        <div class="client-signoff"><img src="assets/shri-sabhari-logo.png" alt="Shri Sabhari" /><span>Career Level & Career Tree Framework</span></div>
+        <div class="partner-mark"><span>Curated by</span><img src="assets/aspire-logo.png" alt="Aspire" /></div>
+      </footer>
+    </section>
+  </main>
+
+  <nav class="dot-nav" aria-label="Slide navigation">
+    <button class="active" data-go="1" aria-label="Go to slide 1"></button>
+    <button data-go="2" aria-label="Go to slide 2"></button>
+    <button data-go="3" aria-label="Go to slide 3"></button>
+    <button data-go="4" aria-label="Go to slide 4"></button>
+    <button data-go="5" aria-label="Go to slide 5"></button>
+  </nav>
+
+  <script src="app.js"></script>
+</body>
+</html>
